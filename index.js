@@ -18,7 +18,8 @@ app.use("/files",fileRoutes)
 
 
 // database connections
-mongoose.connect("mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+1.5.0")
+mongoose.connect("mongodb+srv://ashish1322:DN4jzZkz8voDHsxY@cluster0.88yqf.mongodb.net/?retryWrites=true")
+
 .then(() => console.log("Database Connnected"))
 .catch(() => console.log("Database Connection Failed"))
 
